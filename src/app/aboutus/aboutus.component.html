@@ -1,0 +1,35 @@
+<!-- <p>aboutus works!</p> -->
+<!-- <form >
+<label >first name</label>
+<input type="text"><br>
+<label >last name</label>
+<input type="text"><br>
+<button>aboutus</button>
+</form> -->
+<!-- <h1>Name - {{firstname}} Age - {{age}} Course - {{course}}</h1> -->
+<!-- <input type="text" (change)="onChange()"> -->
+ <!-- <h2>input - {{intValue}}</h2> -->
+ <!-- <input type="text"  > -->
+<!-- <div *ngIf="showHide">
+    <h2>show/hide</h2>
+    <input type="text">
+</div>
+
+<button  *ngIf="showUndoBtn" (click)="onShow()">Undo</button>
+<button (click)="onHide()">Hide</button> -->
+
+<!-- directives (1) -->
+ <select >
+    <option *ngFor="let C of Countries">{{C}}</option>
+ </select>
+ <table>
+    <thead>
+    <th *ngFor="let studentData of header">{{studentData}}</th>
+    
+</thead>     
+<tbody>
+    <tr *ngFor="let studentData of marks">
+        <td *ngFor="let data of studentData | keyvalue">{{data.value}}</td>
+    </tr><br>
+</tbody>
+</table>

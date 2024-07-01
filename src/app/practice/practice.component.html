@@ -1,0 +1,19 @@
+<p>practice works!</p>
+<!-- <h1>{{hello}}</h1> -->
+<input type="text" (change)="onChange()">
+<input type="text" [value]="firstname">
+<input type="text" [(ngModel)]="total" name="total"><br>
+<input type="text" [(ngModel)]="total" name="total">
+<input type="button" (change)="onChange()" value="toy"><br><br>
+<!-- <PracticeComponent></PracticeComponent> -->
+ <button (click)="login()">login</button>
+ <button (click)="logout()">log out</button>
+
+ @if(Isuserloggedin)
+ {
+    <div style="color: brown; border: 5px solid red; width: 200px;">user logged in !!</div>
+ }
+ @else
+ {
+    <div style="color: green; border: 10px solid purple; width: 150px;">user logged out !! </div>
+ }

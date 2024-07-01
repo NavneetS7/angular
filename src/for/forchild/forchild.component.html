@@ -1,0 +1,23 @@
+<!-- <p>forchild works!</p>
+<table>
+    <tr>
+        <th ></th>
+    </tr>
+</table>
+<input type="text" [(ngModel)]="first1" name="first1"> -->
+<input type="text" [(ngModel)]="userdatarecive.firstname" name="userdatarecive.firstname" id="">
+<input type="text" [(ngModel)]="userdatarecive.lastname" name="userdatarecive.lastname" id="">
+<table>
+    <thead>
+        <th *ngFor="let h of header">{{h}}</th>
+        
+    </thead>    
+    <tbody>
+        <tr *ngFor="let x of detail">
+            <td *ngFor="let data of x | keyvalue">{{data.value}}</td>
+        </tr><br>
+    </tbody> 
+
+</table>
+
+<button (click)="getData()">getData1</button>

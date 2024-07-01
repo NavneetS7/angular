@@ -1,0 +1,10 @@
+<p>directives works!</p>
+<h1>Navneet</h1>
+<img *ngIf="Isimagevisible" src="https://images.unsplash.com/photo-1719259795215-5f152b1c26f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="">
+<div *ngIf="showHide">
+    <h2>show/hide</h2>
+    <input type="text">
+</div>
+
+<button  *ngIf="showUndoBtn" (click)="onShow()">Undo</button>
+<button (click)="onHide()" >Hide</button>
